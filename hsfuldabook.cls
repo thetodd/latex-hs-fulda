@@ -1,6 +1,7 @@
 %
 % Vorlage für Bachelor-Thesis an der Hochschule Fulda
 % Created: 2013-12-04
+% Author: Florian Schleich <florian.schleich@informatik.hs-fulda.de>
 %
 
 \def\fileversion{1.0}
@@ -52,7 +53,35 @@
     \thispagestyle{empty} %Keine Seitennummer
     \pagecolor{fulda_partback}
     \refstepcounter{part}
-    \addcontentsline{toc}{part}{\protect\numberline{\thepart}#1}%
+    \addcontentsline{toc}{part}{\proted / latex-hs-fulda
+ Code
+ Issues 0
+ Pull Requests 0
+ Wiki
+ Pulse
+ Graphs
+ Network
+ Settings
+HTTPS clone URL
+	
+You can clone with HTTPS, SSH, or Subversion. 
+
+ Download ZIP
+Latex-Vorlage für die Hochschule Fulda — Edit
+ 4 commits
+ 2 branches
+ 3 releases
+ 1 contributor
+ TeX 100%
+TeX
+Your recently pushed branches:
+ testing (3 minutes ago) Compare & pull request
+  branch: testing  latex-hs-fulda / 
+This branch is 1 commit ahead and 0 commits behind master  Pull Request   Compare
+Added colored part pages.
+latest commit 8160ada48c
+ thetodd authored 8 minutes ago
+ct\numberline{\thepart}#1}%
     \chaptermark{}
     \begin{tikzpicture}[remember picture,overlay]
         \node[yshift=-2cm, xshift=2cm] at (current page.north west) {
