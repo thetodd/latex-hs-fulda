@@ -15,7 +15,7 @@
 \RequirePackage{color}
 \RequirePackage{tikz}
 \RequirePackage{graphicx}
-\RequirePackage{eso-pic}   
+\RequirePackage{eso-pic}
 \RequirePackage[nouppercase,headsepline]{scrpage2}
 
 \RequirePackage{hsfulda_colors}
@@ -47,6 +47,30 @@
     \includegraphics[width=10cm,keepaspectratio]{\watermark}%
     \vfill
 }}}
+
+\def\@part[#1]#2{
+    \thispagestyle{empty} %Keine Seitennummer
+    \pagecolor{fulda_partback}
+    \refstepcounter{part}
+    \addcontentsline{toc}{part}{\protect\numberline{\thepart}#1}%
+    \chaptermark{}
+    \begin{tikzpicture}[remember picture,overlay]
+        \node[yshift=-2cm, xshift=2cm] at (current page.north west) {
+            \begin{tikzpicture}[remember picture,overlay]
+                \color{fulda_partnumber}
+                \node[draw=none,align=right,text width=\paperwidth] at (8cm,-7cm) {\scalebox{15}{\Huge \arabic{part}}};
+            \end{tikzpicture}
+        };
+        \node[yshift=-8cm, xshift=2cm] at (current page.north west) {
+            \begin{tikzpicture}[remember picture,overlay]
+                \color{fulda_part}
+                \node[draw=none,align=right,text width=\paperwidth] at (5cm,-7cm) {\scalebox{1.5}{\Huge #1}};
+            \end{tikzpicture}
+        };
+    \end{tikzpicture}
+    \clearpage
+    \pagecolor{white}
+}
 
 \renewcommand{\maketitle}{
     \begin{titlepage}
