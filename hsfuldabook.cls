@@ -1,7 +1,7 @@
 %
 % Vorlage für Bachelor-Thesis an der Hochschule Fulda
 % Created: 2013-12-04
-% Author: Florian Schleich <florian.schleich@informatik.hs-fulda.de>
+% Author: Florian Schleich <florian.schleich@gmail.com>
 %
 
 \def\fileversion{1.0}
