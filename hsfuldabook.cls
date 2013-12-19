@@ -21,6 +21,7 @@
 
 \RequirePackage{hsfulda_colors}
 \RequirePackage{hsfulda_fonts}
+\RequirePackage{hsfulda_infobox}
 
 \def\logo{images/HSFuldaLogo.pdf}
 \def\watermark{images/HSFuldaLeaf.pdf}
