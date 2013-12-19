@@ -21,6 +21,7 @@
 
 \RequirePackage{hsfulda_colors}
 \RequirePackage{hsfulda_fonts}
+\RequirePackage{hsfulda_infobox}
 
 \def\logo{images/HSFuldaLogo.pdf}
 \def\watermark{images/HSFuldaLeaf.pdf}
@@ -53,41 +54,13 @@
     \thispagestyle{empty} %Keine Seitennummer
     \pagecolor{fulda_partback}
     \refstepcounter{part}
-    \addcontentsline{toc}{part}{\proted / latex-hs-fulda
- Code
- Issues 0
- Pull Requests 0
- Wiki
- Pulse
- Graphs
- Network
- Settings
-HTTPS clone URL
-	
-You can clone with HTTPS, SSH, or Subversion. 
-
- Download ZIP
-Latex-Vorlage für die Hochschule Fulda — Edit
- 4 commits
- 2 branches
- 3 releases
- 1 contributor
- TeX 100%
-TeX
-Your recently pushed branches:
- testing (3 minutes ago) Compare & pull request
-  branch: testing  latex-hs-fulda / 
-This branch is 1 commit ahead and 0 commits behind master  Pull Request   Compare
-Added colored part pages.
-latest commit 8160ada48c
- thetodd authored 8 minutes ago
-ct\numberline{\thepart}#1}%
+    \addcontentsline{toc}{part}{\protect\numberline{\thepart}#1}%
     \chaptermark{}
     \begin{tikzpicture}[remember picture,overlay]
         \node[yshift=-2cm, xshift=2cm] at (current page.north west) {
             \begin{tikzpicture}[remember picture,overlay]
                 \color{fulda_partnumber}
-                \node[draw=none,align=right,text width=\paperwidth] at (8cm,-7cm) {\scalebox{15}{\Huge \arabic{part}}};
+                \node[draw=none,align=right,text width=\paperwidth] at (7cm,-7cm) {\scalebox{15}{\Huge \itshape{\arabic{part}}}};
             \end{tikzpicture}
         };
         \node[yshift=-8cm, xshift=2cm] at (current page.north west) {
