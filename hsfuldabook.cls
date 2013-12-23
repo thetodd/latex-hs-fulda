@@ -72,6 +72,7 @@
     \end{tikzpicture}
     \clearpage
     \pagecolor{white}
+    \setcounter{chapter}{0}
 }
 
 \renewcommand{\maketitle}{
