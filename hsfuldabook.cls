@@ -17,7 +17,7 @@
 \RequirePackage{tikz}
 \RequirePackage{graphicx}
 \RequirePackage{eso-pic}
-\RequirePackage[nouppercase,headsepline]{scrpage2}
+\RequirePackage[nouppercase,headsepline]{scrlayer-scrpage}
 
 \RequirePackage{hsfulda_colors}
 \RequirePackage{hsfulda_fonts}
