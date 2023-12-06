@@ -1,10 +1,6 @@
 Latex-Vorlage für die Hochschule Fulda
 ==============
 
-## Fork
-Das ist ein Update-Fork zu einem Repository von user [thetodd](https://github.com/thetodd). 
-Hier wurden nur die deprecated Packages gefixed.
-
 ## Vorbereitung
 Zunächst muss Koma-Script installiert sein. Das geht (wenn TexLive verwendet wird) über den Befehl
 
